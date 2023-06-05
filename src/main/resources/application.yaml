@@ -1,0 +1,19 @@
+security:
+  jwt:
+    accessSecret: ${ACCESS_SECRET}
+    refreshSecret: ${REFRESH_SECRET}
+
+spring:
+  datasource:
+    url: ${db.url}
+    username: ${db.username}
+    password: ${db.password}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+logging:
+  level:
+    web: debug
