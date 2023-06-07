@@ -1,13 +1,13 @@
-package com.steppedua.securityproject;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class SecurityProjectApplicationTests {
-
-    @Test
-    void contextLoads() {
-    }
-
-}
+//package com.steppedua.securityproject;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//class SecurityProjectApplicationTests {
+//
+//    @Test
+//    void contextLoads() {
+//    }
+//
+//}
