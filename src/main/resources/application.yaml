@@ -5,9 +5,18 @@ spring:
     oauth2:
       resource-server:
         jwt:
-          jwk-set-uri: http://localhost:8484/auth/realms/my_realm/protocol/openid-connect/certs
-          issuer-uri: http://localhost:8484/auth/realms/my_realm
+          jwk-set-uri: http://localhost:8484/auth/realms/rms/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8484/auth/realms/rms
 
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/newdb
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: false
 
 logging:
   level:

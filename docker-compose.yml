@@ -1,8 +1,19 @@
 version: "3.8"
 
 services:
+
+  postgres-back:
+    container_name: postgres1
+    image: library/postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: newdb
+    ports:
+      - "5433:5432"
+
   postgres:
-    container_name: postgres
+    container_name: postgres2
     image: library/postgres
     environment:
       POSTGRES_USER: admin
